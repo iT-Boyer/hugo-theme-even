@@ -6,8 +6,12 @@
       {{ .Site.Title }}
     {{- end -}}
   </a>
+  {{ if .Site.Params.algolia }}
+   <div class="modal-body">
+           {{ partial "search.html" . }}
+   </div>
+  {{ end }}
 </div>
-
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     {{ range .Site.Menus.main -}}
