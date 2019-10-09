@@ -6,10 +6,18 @@
       {{ .Site.Title }}
     {{- end -}}
   </a>
+  {{ if .Site.Params.algolia }}
+   <div class="modal-body">
+           {{ partial "search.html" . }}
+   </div>
+  {{ end }}
 </div>
+<<<<<<< HEAD
 
 {{ partial "header/language-selector.html" . }}
 
+=======
+>>>>>>> 985ddb2 (添加搜索支持)
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     {{ range .Site.Menus.main -}}
