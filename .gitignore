@@ -2,7 +2,6 @@ node_modules/
 .idea/
 static/dist/*.min.js.map
 static/dist/*.min.css.map
-
 # Created by https://www.gitignore.io/api/osx,xcode
 # Edit at https://www.gitignore.io/?templates=osx,xcode
 
@@ -70,3 +69,4 @@ DerivedData/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/osx,xcode
+*.iml
