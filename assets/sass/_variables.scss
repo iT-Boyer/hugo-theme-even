@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Cobalt Blue';
+$theme-color-config: 'Default';
 
 // Default theme color map
 $theme-color-map: (
@@ -32,15 +32,15 @@ $deputy-color: nth($theme-color-list, 2) !default;
 
 // ========== Color ========== //
 $black: #0a0a0a !default;
-$white: #fefefe !default;
+$white: #002b36 !default; //#fefefe
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
 
 
 // ========== Global ========== //
-// Text color of the body.
-$global-font-color: #34495e !default;
+// Text color of the body. #34495e
+$global-font-color: #839496 !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -152,8 +152,8 @@ $post-nav-font-size: 18px !default;
 // Width of the post toc.
 $post-toc-width: 260px !default;
 
-// Backgroud color of the post toc.
-$post-toc-backgroud: rgba($deputy-color, 0.6) !default;
+// Backgroud color of the post toc. rgba($deputy-color, 0.6)
+$post-toc-backgroud: rgba($white, 1) !default;
 
 // Margin left of the post toc.
 $post-toc-margin-left: $global-body-width - 15px !default;
