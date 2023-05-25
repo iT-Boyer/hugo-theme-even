@@ -13,14 +13,15 @@
     class="iconfont icon-rss"
     title="rss"
   ></a>
-  {{- else -}} {{ with .OutputFormats.Get "RSS" }}
-  <a
-    href="{{ .RelPermalink }}"
+  {{- else -}} {{- with .OutputFormats.Get "RSS" }}
+  <link
+    href="{{ .Permalink }}"
+    rel="feed"
     type="application/rss+xml"
     class="iconfont icon-rss"
-    title="rss"
-  ></a>
-  {{ end }} {{- end }}
+    title="{{ $.Site.Title }}"
+  />
+  {{- end -}} {{- end }}
 </div>
 
 <div class="copyright">
