@@ -1,9 +1,7 @@
 node_modules/
 .idea/
-<<<<<<< HEAD
 *.iml
 exampleSite/resources/
-=======
 static/dist/*.min.js.map
 static/dist/*.min.css.map
 
@@ -74,4 +72,3 @@ DerivedData/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/osx,xcode
->>>>>>> 985ddb2 (添加搜索支持)
