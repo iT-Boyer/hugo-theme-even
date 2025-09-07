@@ -20,7 +20,12 @@
   <!-- Content -->
   <div class="post-content">
     <div class="post-summary">
-      {{ .Summary }}
+      {{ if findRE "<!--endtoc-->" .Summary }}
+        {{ $summarySplit := split .Summary "<!--endtoc-->" }}
+        {{ index $summarySplit 1 | safeHTML }}
+      {{ else }}
+        {{ .Summary }}
+      {{ end }}
     </div>
     <div class="read-more">
       <a href="{{ .RelPermalink }}" class="read-more-link">{{ T "readMore" }}</a>
